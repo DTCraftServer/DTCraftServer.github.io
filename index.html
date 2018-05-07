@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>DTCraft</title>
-		<style>
-			body {
-				background-color: #F5F5F5;
-			}
-			.title {
-				text-align: center;
-				font-size: 25px;
-				font-family: Calibri;
-				background-color: #FFFFFF;
-				border-style: solid;
-				border-color: #FFFFFF;
-				padding: 10px;
-				border-top-left-radius: 10px;
-				border-top-right-radius: 10px;
-				border-bottom-left-radius: 10px;
-				border-bottom-right-radius: 10px;
-				
-			}
-			.info {
-				text-align: center;
-				font-size: 15px;
-				font-family: Calibri;
-				background-color: #FFFFFF;
-				border-style: solid;
-				border-color: #FFFFFF;
-				padding: 10px;
-				border-top-left-radius: 10px;
-				border-top-right-radius: 10px;
-				border-bottom-left-radius: 10px;
-				border-bottom-right-radius: 10px;
-				
-			}
-			progress {
-				width: 70%;
+    <head>
+        <title>DTCraft</title>                   
+        <style>
+            header {  
+                background-color: rgb(90,210,200);
+                border-style: solid; border-width: 1px; border-radius: 10px;  /* BORDER */
+                width: 50%; 
+                color: white;
+                font-weight: bold; text-align: center;  /* FONT */
+                top: -10px;
+                position: relative;
+                box-shadow: 0px 2px 2px, 0px -2px 2px;
+           }
+           #bg1 {
+              left: -25px; top: 0px;
+              position: fixed;
+              z-index: -2;
+            }
+            #bg2 {
+                top: 0px; right: -25px;
+                position: fixed;
+                z-index: -2;
+            }
+            a:link {
+                text-decoration: none;
+                color: white;
+            }
+            a:visited {
+                text-decoration: none;
+                color: white;
+            }
+             nav {
+                font-family: "Courier New", Courier, monospace;
+                background-color: rgb(90,210,200);
+                border-style: solid; border-width: 1px; border-radius: 0px 0px 10px 10px; /* BORDER */
+                width: 45%;
+                height: 30px;
+                letter-spacing: 2px; word-spacing: 65px; /* SPACING */
+                color: white;
+                font-weight: bold; font-size: large; /* FONT */
+                top: -10px;
+                position: relative;
+                box-shadow: 0px 2px 2px, 0px 2px 2px;
+            }
+           progress {
+				width: 40%;
 				height: 20px;
-				background: #DCDCDC;
-				color: #32CD32;
+				background: #DCDCDC; color: #32CD32;
 			}
 			progress::-webkit-progress-bar {
 				background: #DCDCDC;
@@ -47,27 +56,16 @@
 				background: #32CD32;
 			}
 			progress::-moz-progress-bar {
-				color: #32CD32;
-				background: #DCDCDC;
+				color: #32CD32; background: #DCDCDC;
 			}
-		<!--	.lol {
-				font-size: 8pt;
-				text-align: right;
-				padding-bottom: 10px;
-				color: grey;
-			} -->
-		</style>
-	</head>
-	<body>
-		<div class="title"><b>DTCraft</b></div>
-		<p></p>
-		<div class="info">
-			В данный момент сайт не готов. Заходите позже.
-			<br/><br/>
-			Сайт готов на: <br/>
-			<progress max="100" value="50"></progress> <br/>
-			DTCraft  готов на: <br/>
-			<progress max="100" value="0"></progress>
-		</div>
-	</body>
+           </style>
+    </head>
+    <body>   
+           <div><img id="bg1" src="bg1.png"><img id="bg2" src="bg2.png"></div>
+            <div align="center" id="dtc"><header><h1>DTCraft</h1></header></div>
+        <div align="center" id="nav"><nav>IP: <span id="ip">Скоро...</span><a id="dtp" href="https://dtcraft.cf/projects/">           DTProjects</a></nav></div>
+        <div align="center" id="parr"><p id="par">
+           DTCraft - это сервер MCPE <br/>DTCraft готов на: <br/><progress max=100, value=0></progress>
+           </p></div>
+    </body>
 </html>
