@@ -1,71 +1,23 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title>DTCraft</title>                   
-        <style>
-            header {  
-                background-color: rgb(90,210,200);
-                border-style: solid; border-width: 1px; border-radius: 10px;  /* BORDER */
-                width: 50%; 
-                color: white;
-                font-weight: bold; text-align: center;  /* FONT */
-                top: -10px;
-                position: relative;
-                box-shadow: 0px 2px 2px, 0px -2px 2px;
-           }
-           #bg1 {
-              left: -25px; top: 0px;
-              position: fixed;
-              z-index: -2;
-            }
-            #bg2 {
-                top: 0px; right: -25px;
-                position: fixed;
-                z-index: -2;
-            }
-            a:link {
-                text-decoration: none;
-                color: white;
-            }
-            a:visited {
-                text-decoration: none;
-                color: white;
-            }
-             nav {
-                font-family: "Courier New", Courier, monospace;
-                background-color: rgb(90,210,200);
-                border-style: solid; border-width: 1px; border-radius: 0px 0px 10px 10px; /* BORDER */
-                width: 45%;
-                height: 30px;
-                letter-spacing: 2px; word-spacing: 65px; /* SPACING */
-                color: white;
-                font-weight: bold; font-size: large; /* FONT */
-                top: -10px;
-                position: relative;
-                box-shadow: 0px 2px 2px, 0px 2px 2px;
-            }
-           progress {
-				width: 40%;
-				height: 20px;
-				background: #DCDCDC; color: #32CD32;
-			}
-			progress::-webkit-progress-bar {
-				background: #DCDCDC;
-			}
-			progress::-webkit-progress-value {
-				background: #32CD32;
-			}
-			progress::-moz-progress-bar {
-				color: #32CD32; background: #DCDCDC;
-			}
-           </style>
-    </head>
+        <title>DTCraft</title>
+        </head>
     <body>   
-           <div><img id="bg1" src="bg1.png"><img id="bg2" src="bg2.png"></div>
-            <div align="center" id="dtc"><header><h1>DTCraft</h1></header></div>
-        <div align="center" id="nav"><nav>IP: <span id="ip">Скоро...</span><a id="dtp" href="https://dtcraft.cf/projects/">           DTProjects</a></nav></div>
-        <div align="center" id="parr"><p id="par">
-           DTCraft - это сервер MCPE <br/>DTCraft готов на: <br/><progress max=100, value=0></progress>
-           </p></div>
+    <style>
+            @font-face {font-family: 'Proxima Nova';src: url('fonts/proximanova.ttf');}
+            h1 {font-family: Proxima Nova;}
+            header {background-color: rgb(90,210,200);border-style: solid;border-width: 1px;border-radius: 10px;width: 50%;color: white;font-weight: bold;text-align: center;top: -10px;position: relative;box-shadow: 0px 2px 2px,0px -2px 2px;width: 60%;}
+            #bg1 {left: -25px;top: 0px;position: fixed;z-index: -2;width: 30%;height: 100%;}
+            #bg2 {top: 0px;right: -25px;position: fixed;z-index: -2;width: 30%;height: 100%;}
+            a:link {text-decoration: none;color: white;}
+            a:visited {text-decoration: none;color: white;}
+            nav {width: 40%;height: fit-content;font-family: "Courier New", Courier, monospace;background-color: rgb(90,210,200);border-style: solid;border-width: 1px; border-radius: 0px 0px 10px 10px;width: 45%; letter-spacing: 2px;word-spacing: 70px;color: white;font-weight: bold;font-size: large;top: -10px;position:relative;box-shadow: 0px 2px 2px,0px 2px 2px;}
+            #par {width: 50%;word-break: break-all;}
+            #par {position: relative;transform: rotateY(0deg);}
+    </style>
+        <div><img id="bg1" src="bg1.png"><img id="bg2" src="bg2.png"></div>
+        <div align="center" id="dtc"><header><h1>DTCraft</h1></header></div>
+        <div align="center" id="nav"><nav>IP: <span id="ip">...</span><a id="dtp" href="https://dtcraft.cf/projects/">    DTProjects</a></nav></div>
+        <div align="center" id="parr"><p id="par">Скоро...</p></div>
     </body>
 </html>
